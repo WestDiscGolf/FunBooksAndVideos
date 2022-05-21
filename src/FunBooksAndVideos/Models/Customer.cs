@@ -40,13 +40,16 @@ public class Customer : IEntity
 
     // other properties which are managed through this system
 
-    // extension points would be
-    // * membership history changed over time
     public void SetMembership(string membershipName)
     {
+        // todo: additional rules can be added here.
+        // Depending on the complexity and if dependencies of other services are required it maybe more appropriate to move the membership processing to a targeted service.
         Membership = new CurrentMembership()
         {
             Name = membershipName
         };
     }
+    
+    // extension points would be
+    // * membership history changed over time
 }
