@@ -6,11 +6,6 @@
 public class Video : OnlineProduct
 {
     /// <summary>
-    /// Name of the video.
-    /// </summary>
-    public string Name { get; set; }
-
-    /// <summary>
     /// The classification rating of the film eg U, PG, 12, 15, 18
     /// </summary>
     public string Classification { get; set; }
