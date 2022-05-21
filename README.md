@@ -35,4 +35,6 @@ slip has to be generated.
 - Implement an Object Oriented model of the system
 - Design a flexible purchase order processor
 - Implement the above business rules
+
+
 credits: Code Kata adapted from Dave Thomas
