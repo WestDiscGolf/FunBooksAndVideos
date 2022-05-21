@@ -4,6 +4,9 @@ using MediatR;
 
 namespace FunBooksAndVideos.Services;
 
+/// <summary>
+/// Business rule to determine whether the provided Purchase Order has a membership and processes accordingly.
+/// </summary>
 public class ContainsMembership : IBusinessRule
 {
     private readonly IMediator _mediator;

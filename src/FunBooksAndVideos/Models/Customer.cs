@@ -50,25 +50,3 @@ public class Customer : IEntity
         };
     }
 }
-
-public class CurrentMembership
-{
-    public string Name { get; set; }
-
-    // extension points would be
-    // * history of when it started
-    // * any customer specific changes to the membership might be allowed eg. custom discount etc.
-}
-
-public class Address
-{
-    public string Line1 { get; set; }
-
-    public string Line2 { get; set; }
-    
-    public string Line3 { get; set; }
-    
-    public string Line4 { get; set; }
-
-    public string Line5 { get; set; }
-}

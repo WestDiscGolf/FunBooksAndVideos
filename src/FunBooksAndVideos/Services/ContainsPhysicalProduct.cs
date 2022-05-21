@@ -4,6 +4,9 @@ using MediatR;
 
 namespace FunBooksAndVideos.Services;
 
+/// <summary>
+/// Business rule to determine whether the provided Purchase Order has any physical items eg. books to warrant the need for a shipping label
+/// </summary>
 public class ContainsPhysicalProduct : IBusinessRule
 {
     private readonly IMediator _mediator;

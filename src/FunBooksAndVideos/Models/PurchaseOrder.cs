@@ -18,9 +18,12 @@ public class PurchaseOrder : IEntity
     public string OrderId { get; set; }
 
     /// <summary>
-    /// The customer it the order is owned by. This is denormalized to allow for ease of storage in no sql db.
-    /// It also gives a snap shot of the customer at time of ordering to see name, shipping address etc.
+    /// The customer record which represents the customer ordering the items.
     /// </summary>
+    /// <remarks>
+    /// This is denormalized/duplicated on purpose. This is to allow for ease of storage in no sql db.
+    /// It also gives a snap shot of the customer at time of ordering to see name, shipping address etc.
+    /// </remarks>
     public Customer Customer { get; set; }
 
     /// <summary>

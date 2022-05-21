@@ -13,22 +13,3 @@ public class Membership : OnlineProduct
     // extension points would be
     // * expiry dates of specific memberships
 }
-
-public class Video : OnlineProduct
-{
-    /// <summary>
-    /// Name of the video.
-    /// </summary>
-    public string Name { get; set; }
-
-    /// <summary>
-    /// The classification rating of the film eg U, PG, 12, 15, 18
-    /// </summary>
-    public string Classification { get; set; }
-}
-
-public class OnlineProduct : Product
-{
-    /// <inheritdoc />
-    public override ProductType Type => ProductType.Online;
-}
