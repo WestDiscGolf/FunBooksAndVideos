@@ -8,10 +8,16 @@ club, the video club or for both clubs (premium).
 A purchase order can contain products or membership requests. A
 purchase order has an PO ID, a customer ID and total price. There is an
 item line in the purchase order per product purchased (product,
-membership type). One example of a purchase order is the following:
+membership type).
+
+One example of a purchase order is the following:
+
 Purchase Order: 3344656
+
 Total: 48.50
+
 Customer: 4567890
+
 Item lines:
 - Video "Comprehensive First Aid Training"
 - Book "The Girl on the train"
